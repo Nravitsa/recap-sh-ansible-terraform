@@ -1,0 +1,9 @@
+- name: Creating User Roboshop
+  ansible.builtin.user:
+    name: roboshop
+
+
+- name: Recursively remove directory
+  ansible.builtin.file:
+    path: /etc/foo
+    state: absent
