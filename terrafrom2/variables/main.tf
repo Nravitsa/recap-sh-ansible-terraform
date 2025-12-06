@@ -67,7 +67,3 @@ output "mapOutput" {
 }
 
 
-
-git pull
-terraform init
-terraform plan
