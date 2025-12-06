@@ -1,0 +1,3 @@
+module "whatever" {
+  source = "./sample"
+}
