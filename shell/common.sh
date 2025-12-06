@@ -11,9 +11,7 @@ system_microservice_start () {
 
 download_and_install_app_content () {
   id roboshop || useradd roboshop
-  rm -rf /app
-  mkdir /app
-  cd /app
+  rm -rf /appa
   curl -L -o "/tmp/${app_name}.zip" "https://roboshop-artifacts.s3.amazonaws.com/${app_name}-v3.zip"
   unzip "/tmp/${app_name}.zip"
 }
