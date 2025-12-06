@@ -1,9 +1,9 @@
-variable "age1" {
+variable "age" {
   default = 30
 }
 
 output "output_of_age" {
-  value = var.age1
+  value = var.age
 }
 
 variable "name" {
@@ -67,3 +67,22 @@ output "mapOutput" {
 }
 
 
+
+##VARIBLE FROM CLI
+
+variable "fromCLI" {}
+
+output "cliInput" {
+  value = var.fromCLI
+}
+
+# terraform apply -auto-approve -var fromCLI=100
+# terraform apply -auto-approve -var fromCLI="name is Ram"
+
+
+
+variable "env" {}
+output "envoutput" {
+  value = var.env
+}
+º
