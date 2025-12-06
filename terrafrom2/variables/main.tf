@@ -31,8 +31,8 @@ variable "list" {
   default = [
     1,
     2,
-    false
-    true
+    false,
+    true,
     "Sexy Boiii"
   ]
 }
@@ -40,10 +40,10 @@ variable "list" {
 
 output "listOutput" {
   value = [
-    var.list[0]
-    var.list[1]
-    var.list[2]
-    var.list[3]
+    var.list[0],
+    var.list[1],
+    var.list[2],
+    var.list[3],
     var.list[4]
   ]
 }
@@ -60,10 +60,10 @@ variable "map" {
 
 output "mapOutput" {
   value = [
-    var.map["name"]
-    var.map["age"]
+    var.map["name"],
+    var.map["age"],
     var.map["HasKids"]
   ]
 }
 
-# git pull terraform init terraform plan
+
