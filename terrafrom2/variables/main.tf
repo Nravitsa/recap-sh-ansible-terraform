@@ -1,9 +1,9 @@
-variable "age" {
+variable "age1" {
   default = 30
 }
 
 output "output_of_age" {
-  value = var.age
+  value = var.age1
 }
 
 variable "name" {
@@ -67,3 +67,7 @@ output "mapOutput" {
 }
 
 
+
+git pull
+terraform init
+terraform plan
